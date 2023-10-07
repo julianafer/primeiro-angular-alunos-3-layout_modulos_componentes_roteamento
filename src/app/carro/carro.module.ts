@@ -8,7 +8,6 @@ import {FormsModule} from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatBadgeModule} from '@angular/material/badge';
-import {PipesModule} from '../pipes/pipes.module';
 import {FlexModule} from '@angular/flex-layout';
 import {RouterLink} from '@angular/router';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -21,7 +20,8 @@ import { ListagemCarrosComponent } from './listagem-carro/listagem-carro.compone
     ListagemCarrosComponent
   ],
   exports:[
-    CadastroCarroComponent  
+    CadastroCarroComponent,
+    ListagemCarrosComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -33,9 +33,8 @@ import { ListagemCarrosComponent } from './listagem-carro/listagem-carro.compone
     MatFormFieldModule,
     MatInputModule,
     MatBadgeModule,
-    PipesModule,
     FlexModule,
-    RouterLink
+    RouterLink,
   ]
 })
 export class CarroModule { }

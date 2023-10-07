@@ -35,7 +35,8 @@ import { CarroModule } from './carro/carro.module';
     MatMenuModule,
     LayoutModule,
     UsuarioModule,
-    CarroModule
+    CarroModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

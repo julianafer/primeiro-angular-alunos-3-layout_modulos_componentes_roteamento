@@ -5,10 +5,10 @@
     <mat-card fxFlex="20" class="card-carro" *ngFor="let carro of carros">
       <mat-card-header>
         <mat-card-title>{{carro.modelo | titlecase}}</mat-card-title>
-        <mat-card-subtitle>Placa: {{carro.placa}} - Cor: {{carro.cor}}</mat-card-subtitle>
+        <mat-card-subtitle>placa: {{carro.placa}} - cor: {{carro.cor}}</mat-card-subtitle>
       </mat-card-header>
       <mat-card-content>
-        VRUMMMMMMMMMMMMMMMMMMMMMMMMM
+        Carro {{carro.modelo}} - {{carro.placa}} está louco para ser alugado!
       </mat-card-content>
       <mat-card-actions>
         <button mat-button (click)="excluir(carro)">

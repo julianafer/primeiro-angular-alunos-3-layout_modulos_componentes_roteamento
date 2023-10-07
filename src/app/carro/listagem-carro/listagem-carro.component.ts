@@ -10,9 +10,9 @@ import {CARROS} from '../../shared/modelo/CARROS';
 export class ListagemCarrosComponent {
 
   carros = CARROS;
-  excluir(CarroARemover: Carro): void {
+  excluir(carroARemover: Carro): void {
     const indx = this.carros.findIndex(carro =>
-      carro.placa === CarroARemover.placa);
+      carro.placa === carroARemover.placa);
 
     this.carros.splice(indx, 1);
   }
